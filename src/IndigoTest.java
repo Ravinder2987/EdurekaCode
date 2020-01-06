@@ -147,8 +147,7 @@ public class IndigoTest {
 		fb. calender1();
 		//fb.currentDate();
 		//fb.numOfPassengers();
-		
-	//fb.quitBrowser();
+		fb.quitBrowser();
 
 	}
 }

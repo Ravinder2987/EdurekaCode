@@ -12,18 +12,18 @@ public class CaseStudy1 {
 		public void openBrowser(String browserType, String url) {
 			
 			if(browserType.equals("firefox")) {
-				System.setProperty("webdriver.gecko.driver", "C:\\Users\\Vishal\\eclipse-workspace\\Edureka\\drivers\\geckodriver.exe");
+				System.setProperty("webdriver.gecko.driver", "C:\\drivers\\geckodriver.exe");
 				driver = new FirefoxDriver();
 			}
 			
 			
 			else if(browserType.equals("ie")) {
-				System.setProperty("webdriver.ie.driver", "C:\\Users\\Vishal\\eclipse-workspace\\Edureka\\drivers\\IEDriverServer.exe");
+				System.setProperty("webdriver.ie.driver", "C:\\drivers\\IEDriverServer.exe");
 				driver = new InternetExplorerDriver();
 			}
 			
 			else if(browserType.equals("chrome")) {
-				System.setProperty("webdriver.chrome.driver", "C:\\Users\\Vishal\\eclipse-workspace\\Edureka\\drivers\\chromedriver.exe");
+				System.setProperty("webdriver.chrome.driver", "C:\\drivers\\chromedriver.exe");
 				
 				driver = new ChromeDriver();
 				

@@ -49,45 +49,45 @@ public class facebookLinks {
 		driver.get(url);
 	}
 	
-//	public void getLinks() {
-//
-//		List<WebElement> footerLinks = driver.findElements(By.cssSelector("#pageFooterChildren a"));
-//		List <String> linkNames = new ArrayList<>();
-//
-//		for (int i = 0; i<footerLinks.size(); i++) {
-//
-//			linkNames.add(footerLinks.get(i).getText());
-//			WebElement ele = footerLinks.get(i);
-//			System.out.println(ele.getText());
-//
-//			System.out.println(footerLinks.get(i).getText());
-//
-//		}
-//
-//	}
+	public void getLinks() {
+
+		List<WebElement> footerLinks = driver.findElements(By.cssSelector("#pageFooterChildren a"));
+		List <String> linkNames = new ArrayList<>();
+
+		for (int i = 0; i<footerLinks.size(); i++) {
+
+			linkNames.add(footerLinks.get(i).getText());
+			WebElement ele = footerLinks.get(i);
+			System.out.println(ele.getText());
+
+			System.out.println(footerLinks.get(i).getText());
+
+		}
+
+	}
 	
 	public void clickLink() throws InterruptedException {
 		
 		List<WebElement> footerLinks = driver.findElements(By.cssSelector("#pageFooterChildren a"));
 		
 		//String currentWindowHandle = driver.getWindowHandle();
-//		
-//		ArrayList<String> tabHandles = new ArrayList<String> (driver.getWindowHandles());
-//		String newTab = "https://www.instagram.com/";
-//		boolean newFoundTab = false;
-//		
-//		for (String eachHandle : tabHandles) {
-//		driver.switchTo().window(eachHandle);
-//		
-//		if(driver.getTitle().equals(newTab)) {
-//		driver.close();
-//		
-//		
-//		//coming back to old tab
-//		driver.switchTo().window(currentWindowHandle);
-//		newFoundTab = true;
-//	 }
-//		}
+		
+		ArrayList<String> tabHandles = new ArrayList<String> (driver.getWindowHandles());
+		String newTab = "https://www.instagram.com/";
+		boolean newFoundTab = false;
+		
+		for (String eachHandle : tabHandles) {
+		driver.switchTo().window(eachHandle);
+		
+		if(driver.getTitle().equals(newTab)) {
+		driver.close();
+		
+		
+		//coming back to old tab
+		driver.switchTo().window(currentWindowHandle);
+		newFoundTab = true;
+	 }
+		}
 		
 		System.out.println("---------Total no. of Links found in Footer------ ::  "+footerLinks.size());
 		
@@ -120,7 +120,7 @@ public class facebookLinks {
 		
 		fb.clickLink();
 		
-		//fb.closeBrowser();
+		fb.closeBrowser();
 
 	}
 

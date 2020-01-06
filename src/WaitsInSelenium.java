@@ -122,7 +122,7 @@ public class WaitsInSelenium {
 
 	//driver.manage().timeouts().setScriptTimeout(50,TimeUnit.SECONDS);			//setScript Timeout 
 
-	public static void main(String[] args) {				//Main Method
+	public static void main(String[] args) {				
 
 		WaitsInSelenium waitSel = new WaitsInSelenium ();
 

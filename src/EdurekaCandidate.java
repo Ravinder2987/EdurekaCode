@@ -75,9 +75,9 @@ public class EdurekaCandidate {
 		email.sendKeys(Keys.TAB);
 
 		//enter password
-		driver.findElement(By.cssSelector("#si_popup_passwd")).sendKeys("putyourpassword");
+		driver.findElement(By.cssSelector("#si_popup_passwd")).sendKeys("putpassword");
 		email.clear();
-		email.sendKeys("putyouremail@gmail.com");
+		email.sendKeys("putemail@gmail.com");
 		driver.findElement(By.xpath("//button[@class='clik_btn_log btn-block']")).click();
 
 
